@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block main %}
+
+
+<div class="container">
+<div class="col">
+    <h2>Items</h2>
+    <div class="row">
+        <div class="col">
+            <p>
+            {{ item.title }}
+            </p>
+        </div>
+        <div class="col">
+            <p>
+            {{ item.description }}
+            </p>
+        </div>
+    </div>
+    <form method="post">
+    <button type="submit" class="btn btn-danger">Edit</button>
+    <button type="button" class="btn btn-info">Delete</button>
+    </form>
+</div>
+</div>
+
+
+{% endblock %}
